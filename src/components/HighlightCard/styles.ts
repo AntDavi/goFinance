@@ -10,7 +10,7 @@ export const Container = styled.View<TypeProps>`
     background-color: ${({ theme, type }) => 
     type === 'total' ? theme.colors.secondary : theme.colors.shape};
 
-    width: ${RFValue(300)}px;
+    width: ${RFValue(310)}px;
     border-radius: 10px;
     padding: 19px 23px;
     padding-bottom: ${RFValue(42)}px;
