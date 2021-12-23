@@ -91,7 +91,7 @@ export function Register() {
             <Container>
                 <Header>
                     <Title>
-                        Cadastro
+                        Adicionar Transação
                     </Title>
                 </Header>
 
@@ -116,13 +116,13 @@ export function Register() {
                         <TransactionTypes>
                             <TransactionTypeButton
                                 type="up"
-                                title="Income"
+                                title="Entrada"
                                 onPress={() => handleTransactionTypeSelect('up')}
                                 isActive={transactionType === 'up'}
                             />
                             <TransactionTypeButton
                                 type="down"
-                                title="Outcome"
+                                title="Saída"
                                 onPress={() => handleTransactionTypeSelect('down')}
                                 isActive={transactionType === 'down'}
                             />
@@ -133,7 +133,7 @@ export function Register() {
                             onPress={handleOpenSelectCategoryModal}
                         />
                     </Fields>
-                    <Button 
+                    <Button
                         title="Enviar"
                         onPress={handleSubmit(handleRegister)}
                     />
